@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project automates the setup of a development environment for working on Ruby on Rails using Bitnami installer. 
+This project automates the setup of a development environment for working on Ruby on Rails using Bitnami installer.
 
 >
 Bitnami native installers automate the setup of a Bitnami application stack on Windows, OS X or Linux. Each installer includes all of the software necessary to run out of the box (the stack).
@@ -12,6 +12,12 @@ https://bitnami.com/stack/ruby/installer
 
   - [VirtualBox](https://www.virtualbox.org/)
   - [Vagrant](http://vagrantup.com/)
+
+Install plugin for vagrant:
+```
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-librarian-chef-nochef
+```
 
 ## What's In The Box
 
@@ -36,8 +42,9 @@ Bitnami Ruby Stack 2.2.3-2 Dev (64-bit) ships with the following:
 
 Building the virtual machine is easy:
 ```
-host $ git clone https://github.com/toancong/rubystack-bitnami-box
-host $ cd rubystack-bitnami-box
+host $ git clone https://github.com/kun391/rubybox.git
+host $ cd rubybox
+host $ touch Cheffile
 host $ vagrant up
 ```
 

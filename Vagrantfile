@@ -3,7 +3,8 @@
 Vagrant.configure('2') do |config|
   config.vm.hostname = 'localhost'
   config.vm.box      = 'ubuntu/trusty64'
-  # config.vm.box_url  = "http://192.168.1.121/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.box_url  = "D:/backup/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+  # maybe use box url with link in the internet
 
   config.vm.provider "virtualbox" do |vb|
     # vb.gui = true
